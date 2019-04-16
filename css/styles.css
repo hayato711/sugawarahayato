@@ -1,0 +1,144 @@
+/* CSS Document */
+* { 
+  margin: 0px;
+  padding: 0px;
+}
+/* 全体 */
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  word-break: break-all;
+  max-width: 100%;
+  width: 1366px;
+}
+ul ,li {
+  list-style: none;
+}
+.inner {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1180px;
+}
+/* ヘッダー */
+#header {
+  background-color: #2A7EB1;
+}
+/* メニュー */
+#header .inner::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* ロゴ */
+.header-logo {
+  float: left;
+  margin: 16px 0;
+}
+.header-logo > a:hover {
+  opacity: 0.6;
+}
+.header-logo > a img {
+  vertical-align: middle;
+  width: 200px;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-item > a {
+  color: white;
+  text-decoration: none;
+}
+.nav-item {
+  justify-content: flex-end;
+  margin: 24px 32px 20px 0;
+}
+
+/* mainvisual */
+#main > .inner{
+  width: 100%;
+  height: 270px;
+  background: url('../images/main/main-visual.png');
+}
+/* blog */
+#blog h2{
+  font-size: 36px;
+  line-height: 1;
+  color: #3C3C3C;
+  width: 300px;
+  height: 38px;
+  position: relative;
+  margin: 49px 0 44px;
+  padding: 0 18px 0 26px;
+}
+#blog h2::before {
+  background: #2a7eb1;
+  content: "";
+  height: 26px;
+  left:0;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 6px;
+}
+/* items */
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1180px;
+  margin:0 93px;
+}
+
+/* item */
+.item{
+  display: block;
+  width: 360px;
+  height: 360px;
+  border-radius: 8px;
+  box-shadow:0px 0px 5px 0 rgba(17, 51, 72, 0.2);
+  margin: 0 50px 50px 0;
+  /* padding: 20px 20px 22px 20px; */
+}
+.item:nth-child(3n){
+  margin-right:0;
+}
+/* .item:nth-child(3n) {
+  margin-right: 0;
+} */
+.item-image{
+  margin: 20px;
+  width: 320px;
+  height: 200px;
+}
+.text{
+  width: 320px;
+  height:101px;
+  margin: 4px 20px 15px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0; 
+  display: -webkit-box;          /* line-clamp を有効にするために指定する */
+  -webkit-box-orient: vertical;  /* line-clamp を有効にするために指定する */
+  -webkit-line-clamp: 4;         /* コレで折り返し表示する行数を指定する・ココでは3行分表示させる */
+  overflow: hidden;              /* ボックスからはみ出た分を非表示にする */
+}
+/* footer */
+footer{
+  width: 1366px;
+  height: 64px;
+  background-color: #B3B3B3;
+}
+.footer-text{
+  text-align: center;
+  line-height: 64px;
+  color: #707070;
+  font-size: 12px;
+}
+
